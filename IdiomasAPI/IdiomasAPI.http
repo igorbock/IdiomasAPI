@@ -1,0 +1,6 @@
+@IdiomasAPI_HostAddress = http://localhost:5252
+
+GET {{IdiomasAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
