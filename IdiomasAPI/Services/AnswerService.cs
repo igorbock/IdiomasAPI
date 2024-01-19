@@ -11,13 +11,15 @@ public class AnswerService : ICRUDService<Answer>
 
     public Task CreateAllAsync(IEnumerable<Answer> types) => throw new NotImplementedException();
 
-    public async Task CreateAsync(Answer type)
+    public async Task<int> CreateAsync(Answer type)
     {
         if (string.IsNullOrEmpty(type.Text))
             throw new ArgumentNullException(nameof(type.Text));
 
-        await _context.Answers.AddAsync(type);
+        var entity = await _context.Answers.AddAsync(type);
         await _context.SaveChangesAsync();
+
+        return entity.Entity.Id;
     }
 
     public Task DeleteAsync(Answer type) => throw new NotImplementedException();

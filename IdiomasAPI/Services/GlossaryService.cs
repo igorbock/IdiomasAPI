@@ -9,10 +9,12 @@ public class GlossaryService : ICRUDService<Glossary>
         _context = context;
     }
 
-    public async Task CreateAsync(Glossary type)
+    public async Task<int> CreateAsync(Glossary type)
     {
-        await _context.Glossaries.AddAsync(type);
+        var entity = await _context.Glossaries.AddAsync(type);
         await _context.SaveChangesAsync();
+
+        return entity.Entity.Id;
     }
 
     public async Task CreateAllAsync(IEnumerable<Glossary> types)

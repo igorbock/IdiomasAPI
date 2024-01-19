@@ -21,7 +21,13 @@ public class QuestionService : ICRUDService<Question>
 
     public Task CreateAllAsync(IEnumerable<Question> types) => throw new NotImplementedException();
 
-    public Task CreateAsync(Question type) => throw new NotImplementedException();
+    public async Task<int> CreateAsync(Question type)
+    {
+        var entity = await _context.Questions.AddAsync(type);
+        await _context.SaveChangesAsync();
+
+        return entity.Entity.Id;
+    }
 
     public Task DeleteAsync(Question type) => throw new NotImplementedException();
 
