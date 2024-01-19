@@ -4,30 +4,28 @@
 [Route("api/[controller]")]
 public class GlossaryController : Controller
 {
-    private readonly IdiomasContext _context;
+    private readonly ICRUDService<Glossary> _service;
 
-    public GlossaryController(IdiomasContext context)
+    public GlossaryController(ICRUDService<Glossary> service)
     {
-        _context = context;
+        _service = service;
     }
+
+    [HttpGet]
+    [SwaggerOperation("Obter glossário, baseado na unidade informada.")]
+    public async Task<IQueryable<Glossary>> GetAll(int? unit) => await _service.GetAllAsync(unit);
 
     [HttpPost]
-    public async Task Create(Glossary glossary)
-    {
-        await _context.Glossaries.AddAsync(glossary);
-        await _context.SaveChangesAsync();
-    }
+    [SwaggerOperation("Inserir nova palavra no glossário.")]
+    public async Task Create(Glossary glossary) => await _service.CreateAsync(glossary);
 
     [HttpPost("all")]
+    [SwaggerOperation("Inserir várias palavras no glossário.")]
     public async Task CreateAll(IEnumerable<Glossary>? glossaries)
     {
         if (glossaries == null)
             throw new JsonException("Nenhum glossário no conteúdo!");
 
-        await _context.Glossaries.AddRangeAsync(glossaries);
-        await _context.SaveChangesAsync();
+        await _service.CreateAllAsync(glossaries);
     }
-
-    [HttpGet]
-    public Task<IQueryable<Glossary>> GetAll(int unit) => Task.FromResult(_context.Glossaries.Where(a => a.Unit == unit));
 }

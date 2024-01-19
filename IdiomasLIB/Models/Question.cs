@@ -1,4 +1,4 @@
-﻿namespace IdiomasLIB;
+﻿namespace IdiomasLIB.Models;
 
 [Table("questions")]
 public class Question
@@ -17,10 +17,4 @@ public class Question
 
     public int Number { get; set; }
     public string? Text { get; set; }
-
-    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public string? Answer { get; set; }
-
-    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
-    public bool? IsCorrect { get; set; }
 }

@@ -1,4 +1,4 @@
-﻿namespace IdiomasLIB;
+﻿namespace IdiomasLIB.Models;
 
 [Table("glossary")]
 public class Glossary
