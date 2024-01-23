@@ -8,6 +8,8 @@ global using IdiomasAPI.Services;
 global using IdiomasLIB.Models;
 global using IdiomasLIB.Chat;
 global using IdiomasLIB.Interfaces;
+global using IdiomasLIB.Gemini;
+global using IdiomasLIB.Gemini.Response;
 
 global using System.Text.Json;
 global using System.Text;

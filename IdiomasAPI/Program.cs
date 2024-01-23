@@ -3,10 +3,12 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddScoped<IHttpResponseMethods<IQueryable<Question>>, QuestionResponse>();
 builder.Services.AddScoped<IHttpResponseMethods<ChatResponse>, BardResponse>();
+builder.Services.AddScoped<IHttpResponseMethods<IQueryable<Part>>, PartResponse>();
 builder.Services.AddScoped<ICRUDService<Glossary>, GlossaryService>();
 builder.Services.AddScoped<ICRUDService<Question>, QuestionService>();
 builder.Services.AddScoped<ICRUDService<Answer>, AnswerService>();
 builder.Services.AddScoped<IService<Image, ChatResponse>, ImageService>();
+builder.Services.AddSingleton<IService<GeminiPro, GeminiProResponse>, ChatService>();
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

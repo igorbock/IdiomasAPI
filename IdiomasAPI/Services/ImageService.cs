@@ -13,6 +13,8 @@ public class ImageService : IService<Image, ChatResponse>
         _bardResponse = bardResponse;
     }
 
+    public void Dispose() => throw new NotImplementedException();
+
     public async Task<ChatResponse> Get(Image requestEntity)
     {
         if (string.IsNullOrEmpty(requestEntity.Base64String))
