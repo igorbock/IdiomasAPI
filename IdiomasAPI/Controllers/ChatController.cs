@@ -14,8 +14,4 @@ public class ChatController : Controller
     [HttpPost]
     [SwaggerOperation("Realizar chat com IA")]
     public async Task<GeminiProResponse> Post(GeminiPro request) => await _service.Get(request);
-
-    [HttpGet]
-    [SwaggerOperation("Limpar histórico do chat.")]
-    public void DisposeChat() => _service.Dispose();
 }
