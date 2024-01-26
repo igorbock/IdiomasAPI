@@ -28,7 +28,7 @@ public class ImageService : IService<Image, ChatResponse>
                 {
                     new
                     {
-                        text = "O que há nessa imagem?"
+                        text = requestEntity.Question
                     },
                     new
                     {
