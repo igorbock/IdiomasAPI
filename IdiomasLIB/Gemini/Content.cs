@@ -2,9 +2,10 @@
 
 public class Content
 {
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     [JsonPropertyName("role")]
     public string? Role { get; set; }
 
     [JsonPropertyName("parts")]
-    public List<Part>? Parts { get; set; }
+    public List<object>? Parts { get; set; }    
 }

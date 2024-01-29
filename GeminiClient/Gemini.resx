@@ -125,19 +125,22 @@
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
         YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJRSURBVEhL7dbvS1NRGMDxvevPCKJ/JIKQCooV1IJhQqAg
-        uhcWXoZlP+ii1XZXmdP90py767bVZM1mU2eWL2qRozGTpEQIKZ0TW1TOaz3t2LPd5nbddj3Vm77wwDlH
-        OB84uy9U/fOMoV6d46nXWOm03Of68AplCZHgI1CQIWT90eo3xfCaylMKu176wPdmEBTj24FDc6PK8e3C
-        inEasCKcFlwxrhR+EBuBwFTh2MaE7zqe1eD18imF5Up8XgbGc+0gXi/ff7iSPq4kcCX1x+Hx1xG44LmB
-        OykqcEewD1a+pHAnRdCzdzhYWxfxRIoKHH8/A/W2Vpief4cnAE8yaIvbAGlxDU/yW0wl4fLDzuN4vXyl
-        nnoptQxNt1kIRsdLovMfFqCrX4DGS+xEdZ3eqK1jTHvVNbuQyq+c35g8qTFgh3NC8efN9vxFFDiHD2ze
-        0Y0h632HtcWfvdyPyxH2gJ6/CqtiGk8Kow73jHnBMuyGyNtX0NzfDl/T3/Av+VGFs2i2rXBqsD3zvGQ2
-        92wmCpOzcdxJUYH5CX9RdHMDgWHgvYMbY7jVA9d7B3IwWR+t0d0lXziZQ8dqTyMrDy9+SuJq6yZjU3DF
-        zOcwuTlvsC0c0NTuR7a8j6tU/qEwcPZ7RUEyrM21qtY2Mkj+igZMumlxQqc7WIB2uYdAc6rJiZwULVgU
-        14E1WcHqyfwXgihZV9frH++uqtqBnBQtmJRYSsJFzpKDG860Te9Rn9iJVH5tgW6mY8TZTWPMYZe9XTDH
-        GdaeLPiY/kZHTjY0k8Htb6lUPwHWK8/5iVu2qAAAAABJRU5ErkJggg==
+        uhcWXoZ1+0EXrfajMqfz3mlO71pbTdZs5o+Z5Yta5GjMJCkRQkrnxBaV81pPO/Zst7ldt11P9aYvPHDO
+        Ec4Hzu4LNf8881C3wfHUay53mu5bevAKdbnDwUegItbB/mD91iheU35q4b6XPvC9GQDV+HbgoblR9fh2
+        YdU4DVgVTgsuG1cLP4iOQGAqf/gx93eDyOnweuXUwkrFPy8D47l2EK9X7j9cTh9X4riS++Pw+OswXPDc
+        wJ0cFbg12AMrX5K4kyPo2TsWWFuX8ESOChx7PwO1PAvT8+/wBOBJGm1ymSAlreFJbovJBFx+2HYcr1eu
+        2FMvJZeh4TYHwch4UXT+wwK097qh/hI3UVljNOtrGOtebdUupHIr5TcmT2oOCHDOXfh5Mz1/EQGLwwe8
+        d3RjyHrfYX3hZy/143KEPGAUr8KqlMKT/KjDXWNesA+7IPz2FTT2tsDX1Df8S25U4QyaaSucGiykn5fM
+        5p7NRGByNoY7OSqwOOEviG6uPzAMondgY0y3uuB6d38WJuujVYa75Asnc+hY9WlkleHFTwlcbd1kdAqu
+        2MQspjTnTfzCAV31fmRL+7iK5R8MgUW4VxAkw/LOVa2+nkHyVzRg0k27E9pcwTy03TUIulMNTuTkaMGS
+        tA6ctRM6Pen/QhAl68pa4+PdFRU7kJOjBZPiSwm4aLFn4bozzdN7tCd2IpVbc6CDaR1xdtAYW6hPaHHb
+        YgwnJPI+pr/RkZN1jWRw+1sazU80A8+qaXBX2wAAAABJRU5ErkJggg==
 </value>
   </data>
   <metadata name="saveFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>122, 17</value>
+  </metadata>
+  <metadata name="openFileDialog1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>257, 17</value>
   </metadata>
 </root>
